@@ -1,0 +1,42 @@
+.c-section {
+	&__features {
+		background: url(../img/bg/6.png) bottom center no-repeat, #023249;
+		background-blend-mode: luminosity;
+		background-size: cover;
+		position: relative;
+		min-height: 450px;
+		
+		.l-features {
+			position: relative;
+			top: -40px;
+			
+			.item {
+				background-color: $color-primary;
+				border-radius: 5px;
+				padding: 40px 30px;
+				box-shadow: 0 4px 20px 0 rgba(100,101,156,.09);
+				margin: 0 10px;
+				@include media-breakpoint-down(md) {
+					margin-bottom: 17px;
+				}
+				
+				.item-inner {
+					display: flex;
+					flex-direction: column;
+					align-content: center;
+					text-align: center;
+					
+					img {
+						width: 71px;
+						height: 71px;
+						margin: 0 auto 25px;
+						filter: hue-rotate(150deg);
+					}
+					.c-subtitle-h4 {
+						margin-bottom: 30px;
+					}
+				}
+			}
+		}
+	}
+}

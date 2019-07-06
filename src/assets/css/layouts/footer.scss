@@ -1,0 +1,26 @@
+.c-footer {
+	.l-footer {
+		height: 130px;
+		width: 100%;
+		background-color: #001924;
+		
+		&__inner {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			
+			.image {
+				margin-bottom: 13px;
+			}
+			
+			.text {
+				p {
+					color: #335d75;
+					font-size: 14px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

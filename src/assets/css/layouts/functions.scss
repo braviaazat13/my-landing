@@ -1,0 +1,55 @@
+.c-section {
+	&__functions {
+		.l-functions {
+			background: url("../img/bg/first.png") top left no-repeat #023249;
+			background-size: cover;
+			background-blend-mode: luminosity;
+			width: 100%;
+			min-height: 592px;
+			
+			&__inner {
+				.l-functions__title {
+					padding: 50px 0 30px;
+					
+					.c-title--primary2 {
+						margin: 0 auto;
+					}
+				}
+			}
+			
+			&__main {
+				padding-bottom: 70px;
+				
+				.item {
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+					min-height: 420px;
+					
+					@include media-breakpoint-down(md) {
+						min-height: 340px;
+						margin-bottom: 60px;
+					}
+					
+					.image {
+						margin-bottom: 20px;
+						
+						img {
+							filter: hue-rotate(150deg);
+						}
+					}
+					
+					.c-subtitle4 {
+						margin-bottom: 12px;
+					}
+					
+					.c-text__small {
+						margin-top: auto;
+					}
+				}
+			}
+		}
+	}
+}
