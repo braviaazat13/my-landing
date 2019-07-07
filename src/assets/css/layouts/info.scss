@@ -1,9 +1,0 @@
-.c-section {
-	&__info {
-		min-height: 318px;
-		padding-top: 40px;
-		@include media-breakpoint-down(sm) {
-			margin-bottom: 50px;
-		}
-	}
-}
