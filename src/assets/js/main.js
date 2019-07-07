@@ -4,15 +4,14 @@
 
 
 $(function() {
-	
-	$(window).on('load', function () {
+	//* Preloader
 		var $preloader = $('#page-preloader'),
 			$spinner   = $preloader.find('.spinner');
 		setTimeout(function() {
 			$spinner.fadeOut();
 			$preloader.delay(800).fadeOut('slow');
 		},1800)
-	});
+	//* End of Preloader
 	
 		$photo = $('.c-main__photo');
 		
