@@ -10,16 +10,19 @@
 		width: 200px;
 		height: 200px;
 		border-radius: 100%;
-		animation: bounce-in-top 1s 500ms both;
 		transition: 2.5s;
 		z-index: 20;
 		
 		&.js-first {
+		
+		}
+		
+		&.js-second {
 			animation: heartbeat 1.5s ease-in-out 1s infinite both;
 			box-shadow: 0 0 36px 0 rgb(0, 0, 0);
 		}
 		
-		&.js-second {
+		&.js-third {
 			animation: decrease 1s ease-out 300ms;
 		}
 		
