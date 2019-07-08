@@ -2,20 +2,31 @@
  * Section: jQuery
  */
 
+
 $(function() {
-	
-	$photo = $('.c-main__photo');
-	
-	setTimeout(function() {
-		$photo.addClass('js-first')
-	},2500);
-	
-	$photo.on('click', function() {
-		$(this).removeClass('js-first').addClass('js-second');
+	//* Preloader
+		var $preloader = $('#page-preloader'),
+			$spinner   = $preloader.find('.spinner');
 		setTimeout(function() {
-			$photo.addClass('hidden')
-		},1170)
-	})
+			$spinner.fadeOut();
+			$preloader.delay(800).fadeOut('slow');
+		},1800)
+	//* End of Preloader
+	
+		$photo = $('.c-main__photo');
+		
+		$photo.addClass('js-first');
+		
+		setTimeout(function() {
+			$photo.addClass('js-second');
+		}, 2500);
+		
+		$photo.on('click', function() {
+			$(this).removeClass('js-second').addClass('js-third');
+			setTimeout(function() {
+				$photo.addClass('hidden');
+			}, 1170);
+		});
 	
 	//@@include('global/_global.js')
 	//@@include('components/_components.js')
