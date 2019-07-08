@@ -10,7 +10,7 @@ $(function() {
 		setTimeout(function() {
 			$spinner.fadeOut();
 			$preloader.delay(800).fadeOut('slow');
-		},1800)
+		},1800);
 	//* End of Preloader
 	
 		$photo = $('.c-main__photo');
@@ -19,7 +19,7 @@ $(function() {
 		
 		setTimeout(function() {
 			$photo.addClass('js-second');
-		}, 2500);
+		});
 		
 		$photo.on('click', function() {
 			$(this).removeClass('js-second').addClass('js-third');
