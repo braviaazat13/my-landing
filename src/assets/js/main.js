@@ -27,6 +27,11 @@ $(function() {
 				$photo.addClass('hidden');
 			}, 1170);
 		});
+		
+		setTimeout(function() {
+			$('.h-first').removeClass('h-first');
+			$('.h-last').removeClass('h-last');
+		}, 4000)
 	
 	//@@include('global/_global.js')
 	//@@include('components/_components.js')
