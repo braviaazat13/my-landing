@@ -62,16 +62,15 @@
 		}
 		
 		&.h-first {
-			animation: move-right 1s ease-in 4s both;
+			animation: move-right 1s ease 4s both;
 		}
-		
 		&.h-middle {
 			z-index: 1;
-			animation: opacity 1s ease-in 4s both;
+			animation: opacity 1s ease 4s both;
 		}
 		
 		&.h-last {
-			animation: move-left 1s ease-in 4s both;
+			animation: move-left 1s ease 4s both;
 		}
 	}
 }
