@@ -244,7 +244,7 @@
 	}
 }
 
-@keyframes opacity {
+@keyframes move-opacity {
 	from {
 		background-color: rgba(0, 0, 0, 1);
 		animation-timing-function: ease-out;
@@ -253,5 +253,27 @@
 	100% {
 		background-color: rgba(196, 196, 196, 0.5);
 		animation-timing-function: ease-out;
+	}
+}
+
+@keyframes move-bottom {
+	from {
+		transform: translateY(-100px);
+		animation-timing-function: ease;
+	}
+	
+	50% {
+		transform: translateY(30px);
+		animation-timing-function: ease;
+	}
+	
+	80% {
+		transform: translateY(20px);
+		animation-timing-function: ease-in-out;
+	}
+	
+	100% {
+		transform: translateY(25px);
+		animation-timing-function: ease-in-out;
 	}
 }
