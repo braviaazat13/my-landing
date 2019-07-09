@@ -13,6 +13,7 @@
 		border-radius: 100%;
 		transition: 2.5s;
 		z-index: 20;
+		position: relative;
 		
 		&.js-first {
 		
@@ -33,11 +34,13 @@
 	}
 	
 	&__social {
+		animation: move-bottom 1s ease 5s both;
 		display: flex;
 	}
 }
 
 .c-social {
+	
 	&__item {
 		background-color: rgba(196, 196, 196, 0.5);
 		width: 60px;
@@ -62,16 +65,15 @@
 		}
 		
 		&.h-first {
-			animation: move-right 1s ease-in 4s both;
+			animation: move-right 1s ease-out 6s both;
 		}
-		
 		&.h-middle {
 			z-index: 1;
-			animation: opacity 1s ease-in 4s both;
+			animation: move-opacity 1s ease-out 6s both;
 		}
 		
 		&.h-last {
-			animation: move-left 1s ease-in 4s both;
+			animation: move-left 1s ease-out 6s both;
 		}
 	}
 }
