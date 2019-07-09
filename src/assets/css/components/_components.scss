@@ -14,14 +14,14 @@
 		transition: 2.5s;
 		z-index: 20;
 		position: relative;
-		
-		&.js-first {
-		
-		}
+		box-shadow: 0 0 36px 0 rgb(0, 0, 0);
 		
 		&.js-second {
-			animation: heartbeat 1.5s ease-in-out 1s 3 both;
-			box-shadow: 0 0 36px 0 rgb(0, 0, 0);
+			animation: heartbeat 1.5s ease-out 2s infinite both;
+		}
+		
+		&.js-first {
+			animation: heartbeat 1.5s ease-in-out infinite both;
 		}
 		
 		&.js-third {
@@ -34,7 +34,7 @@
 	}
 	
 	&__social {
-		animation: move-bottom 1s ease 5s both;
+		animation: move-bottom 1s ease 4.1s both;
 		display: flex;
 	}
 }
@@ -53,6 +53,7 @@
 		align-items: center;
 		color: white;
 		transition: 0.5s;
+		//animation: move-opacity 1s ease-out 3.9s both;
 		
 		&:hover {
 			transform: scale(1.2);
@@ -65,15 +66,15 @@
 		}
 		
 		&.h-first {
-			animation: move-right 1s ease-out 6s both;
+			animation: move-right 1s ease-out 4.2s both;
 		}
 		&.h-middle {
 			z-index: 1;
-			animation: move-opacity 1s ease-out 6s both;
+			//animation: move-opacity 1s ease-out 3.9s both;
 		}
 		
 		&.h-last {
-			animation: move-left 1s ease-out 6s both;
+			animation: move-left 1s ease-out 4.2s both;
 		}
 	}
 }

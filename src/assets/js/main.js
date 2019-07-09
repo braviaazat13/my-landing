@@ -10,22 +10,26 @@ $(function() {
 		setTimeout(function() {
 			$spinner.fadeOut();
 			$preloader.delay(800).fadeOut('slow');
-		},1800);
+		},2000);
 	//* End of Preloader
 	
 		$photo = $('.c-main__photo');
 		
-		$photo.addClass('js-first');
+		//$photo.addClass('js-first');
 		
 		setTimeout(function() {
 			$photo.addClass('js-second');
 		});
 		
+		setTimeout(function photoRemote() {
+			$photo.removeClass('js-second');
+		}, 4500);
+		
 		$photo.on('click', function() {
-			$(this).removeClass('js-second').addClass('js-third');
-			setTimeout(function() {
-				$photo.addClass('hidden');
-			}, 1170);
+			$(this).addClass('js-first');
+			setTimeout(function photoRemote() {
+				$photo.removeClass('js-first');
+			}, 1500);
 		});
 	
 	$('.c-main__social').mouseover(function() {
