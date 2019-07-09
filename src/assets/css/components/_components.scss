@@ -3,6 +3,7 @@
 	cursor: pointer;
 	
 	&__photo {
+		margin: 0 auto;
 		background-image: url("../img/1.jpg");
 		background-repeat: no-repeat;
 		background-position: center;
@@ -12,13 +13,14 @@
 		border-radius: 100%;
 		transition: 2.5s;
 		z-index: 20;
+		position: relative;
 		
 		&.js-first {
 		
 		}
 		
 		&.js-second {
-			animation: heartbeat 1.5s ease-in-out 1s infinite both;
+			animation: heartbeat 1.5s ease-in-out 1s 3 both;
 			box-shadow: 0 0 36px 0 rgb(0, 0, 0);
 		}
 		
@@ -28,6 +30,50 @@
 		
 		&.hidden {
 			display: none;
+		}
+	}
+	
+	&__social {
+		animation: move-bottom 1s ease 5s both;
+		display: flex;
+	}
+}
+
+.c-social {
+	
+	&__item {
+		background-color: rgba(196, 196, 196, 0.5);
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+		font-size: 40px;
+		margin: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		transition: 0.5s;
+		
+		&:hover {
+			transform: scale(1.2);
+			color: white;
+		}
+		
+		&:active {
+			transform: scale(0.5);
+			transition: 0.7s;
+		}
+		
+		&.h-first {
+			animation: move-right 1s ease-out 6s both;
+		}
+		&.h-middle {
+			z-index: 1;
+			animation: move-opacity 1s ease-out 6s both;
+		}
+		
+		&.h-last {
+			animation: move-left 1s ease-out 6s both;
 		}
 	}
 }
