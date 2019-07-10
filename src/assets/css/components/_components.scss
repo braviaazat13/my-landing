@@ -40,7 +40,6 @@
 }
 
 .c-social {
-	
 	&__item {
 		background-color: rgba(196, 196, 196, 0.5);
 		width: 60px;
@@ -68,9 +67,9 @@
 		&.h-first {
 			animation: move-right 1s ease-out 4.2s both;
 		}
+		
 		&.h-middle {
 			z-index: 1;
-			//animation: move-opacity 1s ease-out 3.9s both;
 		}
 		
 		&.h-last {
