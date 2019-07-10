@@ -14,6 +14,7 @@
 		z-index: 20;
 		position: relative;
 		box-shadow: 0 0 36px 0 rgb(0, 0, 0);
+		filter: grayscale(100%);
 		
 		&.js-second {
 			animation: heartbeat 1.5s ease-out 2s infinite both;
