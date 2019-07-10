@@ -1,5 +1,7 @@
 .l-main {
 	animation: bg-pan-bottom 8s infinite alternate forwards;
+	//-webkit-animation: animation 250s infinite ease-in-out;
+	//animation: animation 250s infinite ease-in-out;
 	width: 100vw;
 	height: 100vh;
 	background-image: linear-gradient(0deg, #cc6aa5, #3e91cc, #2dcca7);
